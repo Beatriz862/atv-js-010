@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #8fd6f1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 45%;
+}
+
+.left h2, .right h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.left label, .left select, .left input {
+    margin-top: 5px;
+}
+
+.left button, .right button {
+    background-color: #338fd6f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.left button:hover, .right button:hover {
+    background-color: #558fd6f1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    background-color: #338fd6f1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

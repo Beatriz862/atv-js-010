@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciador de Contas Bancárias</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Gerenciador de Contas Bancárias</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>Inserir Conta</h2>
+            <label for="agencia">Agência:</label>
+            <input type="text" id="agencia"><br>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero"><br>
+            <label for="tipo">Tipo de Conta:</label>
+            <select id="tipo">
+                <option value="corrente">Conta Corrente</option>
+                <option value="poupanca">Conta Poupança</option>
+                <option value="universitaria">Conta Universitária</option>
+            </select><br>
+            <label for="saldo">Saldo:</label>
+            <input type="text" id="saldo"><br>
+            <button onclick="inserirConta()">Inserir</button>
+
+            <h2>Deletar Conta</h2>
+            <label for="conta-a-deletar">Selecione uma conta:</label>
+            <select id="conta-a-deletar"></select>
+            <button onclick="deletarConta()">Deletar</button>
+        </div>
+        <div class="right">
+            <h2>Extrato</h2>
+            <button onclick="visualizarContas()">Visualizar</button>
+            <ul id="lista-contas"></ul>
+            <h2>Saldo Total</h2>
+            <p id="saldo-total">0.00</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Gerenciador de Contas Bancárias</p>
+    </div>
+    <script src="contas.js"></script>
+</body>
+</html>
